@@ -1,0 +1,153 @@
+:root {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --color1: #f0fdfa;
+    --color2: #ccfbf1;
+    --color3: #99f6e4;
+    --color4: #5eead4;
+    --color5: #2dd4bf;
+    --color6: #14b8a6;
+    --color7: #0d9488;
+    --color8: #0f766e;
+    --color9: #115e59;
+    --color10: #134e4a;
+    --beetColor: rgb(212, 19, 80);
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    background-color: var(--color2);
+    grid-template-columns: 200px repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr)
+}
+
+.sidebarItem {
+    height: 40px;
+    width: 100%;
+    background-color: var(--color10);
+    color: white;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.sidebarItem > .icon {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 5px;
+    -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.sidebarItem > div {
+    height: 30px;
+    width: 70%;
+    float: left;
+    font-size: 23px;
+    margin: 5px;
+}
+
+.announcement {
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 6px;
+    border-left: 10px solid var(--beetColor);
+    margin: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.event {
+    width: 250px;
+    height: 100px;
+    background-color: white;
+    border-radius: 6px;
+    border-left: 10px solid var(--beetColor);
+    margin: 10px;
+    padding: 5px;
+}
+
+#welcomeBanner {
+    margin: 10px auto;
+    color: white;
+}
+
+#welcomeBanner > .icon {
+    width: 60px;
+    height: 60px;
+    -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+#welcomeBanner > #leftIcon {
+    float: left;
+    margin: 40px 10px;
+}
+
+#welcomeBanner > h1 {
+    float: left;
+    margin: 10px auto;
+    margin: 50px 20px;
+}
+
+#welcomeBanner > #rightIcon {
+    float: left;
+    margin: 40px 10px;
+}
+
+#sidebar {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 60px;
+    background-color: var(--color2);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+#header {
+    background-image: linear-gradient(135deg, var(--color9), var(--color6));
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#announcementArea {
+    background-image: linear-gradient(135deg, rgb(170, 170, 170), rgb(230, 230, 230));
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+#announcementArea > p {
+    color: var(--color8);
+    font-weight: 700;
+    font-size: 25px;
+    padding: 1px 12px;
+}
+
+#eventArea {
+    background-image: linear-gradient(135deg, rgb(90, 90, 90), rgb(140, 140, 140));
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+#eventArea > p {
+    color: var(--color2);
+    font-weight: 700;
+    font-size: 25px;
+    padding: 1px 12px;
+}
+
+#caweltiLogo {
+    height: 50px;
+    width: auto;
+    margin: 5px auto;
+}
